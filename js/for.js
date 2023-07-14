@@ -10,7 +10,7 @@ for (i = 0; i < 5; i++) {
     }
 }
 
- const array = [2, 2, 3, 8, 2]
+const array = [2, 2, 3, 8, 2]
 
 for (i = 0; i < array.length; i++) {
     const element = array[i];
@@ -51,7 +51,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 //Meter en array con for
-const array4 = [2,5,7,7,7,7];
+const array4 = [2, 5, 7, 7, 7, 7];
 const target2 = 7;
 const indices = [];
 
@@ -63,3 +63,28 @@ for (let i = 0; i < array4.length; i++) {
 }
 console.log(indices);
 console.log(`El elemento ${target2} se encuentra en los índices: ${indices.join(',')}`);
+
+
+//Recorrer un arreglo e imprimir cada elemento:
+const array1 = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < array.length; i++) {
+    console.log(array1[i]);
+}
+
+//Calcular la suma de los números del 1 al 10:
+let suma = 0;
+
+for (let i = 1; i <= 10; i++) {
+    suma += i;
+}
+
+console.log(suma); // Imprime: 55
+
+//Crear una tabla de multiplicar:
+const multiplicando = 5;
+
+for (let i = 1; i <= 10; i++) {
+    const resultado = multiplicando * i;
+    console.log(`${multiplicando} x ${i} = ${resultado}`);
+}

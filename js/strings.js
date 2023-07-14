@@ -14,22 +14,22 @@ let food = "La comida que más me gusta es el sushi";
 const position = food.indexOf("gusta");
 console.log("La posición de la palabra 'gusta' es: " + position);
 //3
-food = food.replace("más", "menos");
-console.log("Cambiada palabra mas por menos en la frase: ", food);
+let foodChange = food.replace("más", "menos");
+console.log("Cambiada palabra mas por menos en la frase: ", foodChange);
 //4
-let existePasta = food.includes("pasta");
+let existePasta = foodChange.includes("pasta");
 console.log("¿La palabra 'pasta' existe en la frase?", existePasta);
 //5
-let reverseFood = food.split(" ").reverse().join(" ");
+let reverseFood = foodChange.split(" ").reverse().join(" ");
 console.log("Frase revertida: ", reverseFood);
 //6
 let counter  = 0;
-for (let i = 0; i <= food.length; i++) {
-    if (food[i] === "e") {
+for (let i = 0; i <= foodChange.length; i++) {
+    if (foodChange[i] === "e") {
         counter ++;
     }
 }
 console.log("Cantidad de vocales 'e' en la frase: ", counter);
 
-let arrayFood = food.split(" ");
+let arrayFood = foodChange.split(" ");
 console.log("Array de palablas: ", arrayFood);
